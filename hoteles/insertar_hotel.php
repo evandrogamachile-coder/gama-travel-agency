@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         "INSERT INTO HOTEL (nombre, ubicacion, habitaciones_disponibles, tarifa_noche)
          VALUES (?, ?, ?, ?)"
     );
-    $stmt->bind_param("ssii", $nombre, $ubicacion, $habitaciones, $tarifa);
+    $stmt->bind_param("ssid", $nombre, $ubicacion, $habitaciones, $tarifa);
 
     if ($stmt->execute()) {
         echo "Hotel registrado correctamente.<br>";
