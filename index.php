@@ -81,7 +81,29 @@
                   <div class="col-12 d-grid">
                     <button type="submit" class="btn btn-primary btn-lg">Enviar intención</button>
                   </div>
+      <h2 class="titulo-busqueda">🔎 Buscar vuelos disponibles</h2>
 
+<form action="vuelos/busqueda_vuelos.php" method="GET" class="form-busqueda-vuelos">
+
+    <div class="campo-form">
+        <label for="origen">Origen:</label>
+        <input type="text" id="origen" name="origen" placeholder="Ej: Santiago" required>
+    </div>
+
+    <div class="campo-form">
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" name="destino" placeholder="Ej: Lima" required>
+    </div>
+
+    <div class="campo-form">
+        <label for="fecha">Fecha de vuelo:</label>
+        <input type="date" id="fecha" name="fecha" required>
+    </div>
+
+    <button type="submit" class="btn-buscar">Buscar vuelos</button>
+</form>
+
+  
                 </div>
               </form>
 
